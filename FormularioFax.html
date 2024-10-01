@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Faxina</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="Cadastro">
+        <h1>Formulario Faxina</h1>
+        
+        <br><br>
+
+        <form action="">
+
+            <label for="lnome">Nome: </label>
+            <input type="text" id="lnome" placeholder="Digite o seu nome..." maxlength="40">
+
+            <br><br>
+
+            <label for="lTelefone">Telefone/Celular: </label>
+            <input type="tel" name="iTelefone" id="lTelefone" placeholder="xx xxxxx-xxxx" pattern="[0-9] {2} [0-9] {5} - [0-9] {4}" maxlength="13">
+
+            <br><br>
+
+            <label for="lEndereço">Endereço: </label>
+            <input type="text" name="iEndereço" id="lEndereço" placeholder="Digite o seu Endereço..." maxlength="50">
+            <label for="lComplemento">Numero do imovel: </label>
+            <input type="number" name="iComplemento" id="lComplemento" placeholder="Digite o numero do imovel">
+
+            <br><br>
+
+            <label for="lcasa">Casa: </label>
+            <input type="checkbox" name="iLimpeza" id="lcasa">
+            <label for="lApartamento">Apartamento</label>
+            <input type="checkbox" name="iApartamento" id="lApartamento">
+            <label for="lOutros">Outros</label>
+            <input type="text" name="iOutros" id="lOutros">
+
+            <br><br>
+
+            <label for="lDataHorario">Data e Horario: </label>
+            <input type="datetime-local" name="idatahorario" id="lDataHorario">
+
+            <br><br>
+
+
+
+
+
+
+
+            <br><br>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+</body>
+</html>
