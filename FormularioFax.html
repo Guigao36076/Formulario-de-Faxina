@@ -9,7 +9,7 @@
 <body>
     
     <div class="Cadastro">
-        <h1>Formulario Faxina</h1>
+        <h1>Cadastro Faxina</h1>
         
         <br><br>
 
@@ -21,7 +21,7 @@
             <br><br>
 
             <label for="lTelefone">Telefone/Celular: </label>
-            <input type="tel" name="iTelefone" id="lTelefone" placeholder="xx xxxxx-xxxx" pattern="[0-9] {2} [0-9] {5} - [0-9] {4}" maxlength="13">
+            <input type="tel" name="iTelefone" id="lTelefone" placeholder="99 99999-9999" pattern="[0-9] {2} [0-9] {5} - [0-9] {4}" maxlength="13">
 
             <br><br>
 
@@ -29,6 +29,20 @@
             <input type="text" name="iEndereço" id="lEndereço" placeholder="Digite o seu Endereço..." maxlength="50">
             <label for="lComplemento">Numero do imovel: </label>
             <input type="number" name="iComplemento" id="lComplemento" placeholder="Digite o numero do imovel">
+
+            <br><br>
+
+            <label for="lBairro">Bairro: </label>
+            <input type="text" name="iBairro" id="lBairro" placeholder="Digite o seu bairro..." maxlength="50">
+
+            <label for="lzona">Zona: </label>
+            <select name="iZona" id="lzona" size="1">
+                <option value="ZN">Zona Norte</option>
+                <option value="ZS">Zona Sul</option>
+                <option value="ZL">Zona Leste</option>
+                <option value="ZO">Zona Oeste</option>
+                <option value="C">Centro</option>
+            </select>
 
             <br><br>
 
@@ -41,21 +55,28 @@
 
             <br><br>
 
+            <label for="lPrioridades">Prioridades a serem limpas</label>
+            <select name="iPrioridades" id="lPrioridades" size="2" multiple>
+                <option value="Janela">Janelas</option>
+                <option value="Porta">Portas</option>
+                <option value="Rodape">Rodape</option>
+                <option value="Interior">Interior de armarios</option>
+                <option value="Churrasqueira">Churrasqueira</option>
+            </select>
+            <br><br>
+
             <label for="lDataHorario">Data e Horario: </label>
             <input type="datetime-local" name="idatahorario" id="lDataHorario">
+            
+            <br><br>
+
+            <label for="lPagamento">Forma de Pagamento</label>
+            <input type="text" name="iPagamento" id="lPagamento" placeholder="Digite a forma de pagamento" maxlength="20">
 
             <br><br>
 
-
-
-
-
-
-
-            <br><br>
-
-            <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
 
         </form>
     </div>
